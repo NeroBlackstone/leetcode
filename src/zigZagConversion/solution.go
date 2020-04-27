@@ -76,3 +76,6 @@ func convert(s string, numRows int) string {
 
 //Runtime: 4 ms, faster than 92.78% of Go online submissions for ZigZag Conversion.
 //Memory Usage: 4.4 MB, less than 71.43% of Go online submissions for ZigZag Conversion.
+
+//总结，不要再用两个字符串数组切片来做，非常麻烦，因为最后边界情况相当的不好处理
+//最好还是手动计算在一层上的字符串，分层输出
