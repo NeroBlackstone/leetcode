@@ -11,7 +11,6 @@ func Test_isPalindrome(t *testing.T) {
 		args args
 		want bool
 	}{
-		// TODO: Add test cases.
 		{
 			"Odd test",
 			args{
@@ -45,7 +44,6 @@ func Test_longestPalindrome(t *testing.T) {
 		args args
 		want string
 	}{
-		// TODO: Add test cases.
 		{
 			"Case 1",
 			args{"babad"},
