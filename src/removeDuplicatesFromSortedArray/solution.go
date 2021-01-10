@@ -19,3 +19,4 @@ func removeDuplicates(nums []int) int {
 
 // Runtime: 12 ms, faster than 26.35% of Go online submissions for Remove Duplicates from Sorted Array.
 //Memory Usage: 4.6 MB, less than 9.56% of Go online submissions for Remove Duplicates from Sorted Array.
+// 总结： 非常经典的双指针思想
