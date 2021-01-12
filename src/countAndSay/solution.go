@@ -38,4 +38,4 @@ func getSubStr(count int, num int32) string {
 
 // Runtime: 12 ms, faster than 23.08% of Go online submissions for Count and Say.
 //Memory Usage: 7.1 MB, less than 10.44% of Go online submissions for Count and Say.
-// 总结：这是暴力求解，比较慢，但是易于理解。
+// 总结：这是暴力求解，比较慢，但是易于理解。也可以使用recursion去做。没有太多本质差别。
