@@ -12,7 +12,6 @@ func Test_isMatch(t *testing.T) {
 		args args
 		want bool
 	}{
-		// TODO: Add test cases.
 		{
 			name: "case1",
 			args: args{
