@@ -17,10 +17,9 @@ func letterCombinations(digits string) []string {
 	output := make([]string, 0)
 
 	for _, d := range digits {
-		outputLength := len(output)
 		tempSlice := make([]string, 0)
 		for _, r := range m[d] {
-			if outputLength == 0 {
+			if len(output) == 0 {
 				tempSlice = append(tempSlice, string(r))
 			} else {
 				for _, s := range output {
