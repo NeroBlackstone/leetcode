@@ -18,18 +18,18 @@ func Test_swapPairs(t *testing.T) {
 	}{
 		{
 			"Case1",
-			args{collection.NewLinkList([]int{1,2,3,4}),},
-			collection.NewLinkList([]int{2,1,4,3}),
+			args{collection.NewLinkedList([]int{1,2,3,4}),},
+			collection.NewLinkedList([]int{2,1,4,3}),
 		},
 		{
 			"Case2",
-			args{collection.NewLinkList([]int{}),},
-			collection.NewLinkList([]int{}),
+			args{collection.NewLinkedList([]int{}),},
+			collection.NewLinkedList([]int{}),
 		},
 		{
 			"Case3",
-			args{collection.NewLinkList([]int{1}),},
-			collection.NewLinkList([]int{1}),
+			args{collection.NewLinkedList([]int{1}),},
+			collection.NewLinkedList([]int{1}),
 		},
 	}
 	for _, tt := range tests {

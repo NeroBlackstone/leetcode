@@ -20,26 +20,26 @@ func Test_removeNthFromEnd(t *testing.T) {
 		{
 			name: "Case1",
 			args: args{
-				head: collection.NewLinkList([]int{1, 2, 3, 4, 5}),
+				head: collection.NewLinkedList([]int{1, 2, 3, 4, 5}),
 				n:    2,
 			},
-			want: collection.NewLinkList([]int{1, 2, 3, 5}),
+			want: collection.NewLinkedList([]int{1, 2, 3, 5}),
 		},
 		{
 			name: "Case2",
 			args: args{
-				head: collection.NewLinkList([]int{1}),
+				head: collection.NewLinkedList([]int{1}),
 				n:    1,
 			},
-			want: collection.NewLinkList([]int{}),
+			want: collection.NewLinkedList([]int{}),
 		},
 		{
 			name: "Case3",
 			args: args{
-				head: collection.NewLinkList([]int{1, 2}),
+				head: collection.NewLinkedList([]int{1, 2}),
 				n:    1,
 			},
-			want: collection.NewLinkList([]int{1}),
+			want: collection.NewLinkedList([]int{1}),
 		},
 	}
 	for _, tt := range tests {

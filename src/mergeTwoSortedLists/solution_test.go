@@ -20,10 +20,10 @@ func Test_mergeTwoLists(t *testing.T) {
 		{
 			name: "Case1",
 			args: args{
-				l1: collection.NewLinkList([]int{1, 2, 4}),
-				l2: collection.NewLinkList([]int{1, 3, 4}),
+				l1: collection.NewLinkedList([]int{1, 2, 4}),
+				l2: collection.NewLinkedList([]int{1, 3, 4}),
 			},
-			want: collection.NewLinkList([]int{1, 1, 2, 3, 4, 4}),
+			want: collection.NewLinkedList([]int{1, 1, 2, 3, 4, 4}),
 		},
 		{
 			name: "Case2",
@@ -37,9 +37,9 @@ func Test_mergeTwoLists(t *testing.T) {
 			name: "Case3",
 			args: args{
 				l1: nil,
-				l2: collection.NewLinkList([]int{0}),
+				l2: collection.NewLinkedList([]int{0}),
 			},
-			want: collection.NewLinkList([]int{0}),
+			want: collection.NewLinkedList([]int{0}),
 		},
 	}
 	for _, tt := range tests {

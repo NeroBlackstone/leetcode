@@ -18,16 +18,16 @@ func Test_deleteDuplicates(t *testing.T) {
 		{
 			name: "Case1",
 			args: args{
-				head: collection.NewLinkList([]int{1, 1, 2}),
+				head: collection.NewLinkedList([]int{1, 1, 2}),
 			},
-			want: collection.NewLinkList([]int{1, 2}),
+			want: collection.NewLinkedList([]int{1, 2}),
 		},
 		{
 			name: "Case2",
 			args: args{
-				head: collection.NewLinkList([]int{1, 1, 2, 3, 3}),
+				head: collection.NewLinkedList([]int{1, 1, 2, 3, 3}),
 			},
-			want: collection.NewLinkList([]int{1, 2, 3}),
+			want: collection.NewLinkedList([]int{1, 2, 3}),
 		},
 	}
 	for _, tt := range tests {
