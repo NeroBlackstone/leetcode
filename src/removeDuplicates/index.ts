@@ -14,3 +14,4 @@ function removeDuplicates(nums: number[]): number {
 }
 
 // 知识点，双指针。
+// 注意题干说了是已排序的数组
