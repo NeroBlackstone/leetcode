@@ -1,5 +1,6 @@
 function productExceptSelf(nums: number[]): number[] {
   const len = nums.length;
+  // 牢记这种左右分治的思路
   const arrL = new Array<number>(len);
   const arrR = new Array<number>(len);
   arrL[0] = 1;
@@ -14,3 +15,4 @@ function productExceptSelf(nums: number[]): number[] {
   }
   return arrL;
 }
+// https://leetcode.com/problems/product-of-array-except-self/description/
