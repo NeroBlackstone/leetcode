@@ -19,7 +19,6 @@ function mergeAlternately(word1: string, word2: string): string {
   } else {
     answer.push(word1.slice(i, word1Len));
   }
+  // 记住，join永远比直接+拼字符串快
   return answer.join("");
 }
-
-console.log(mergeAlternately("abc", "pqr"));
